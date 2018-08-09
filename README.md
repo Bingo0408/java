@@ -12,3 +12,6 @@
 
 ## ArrayIndexSort.java
 + provides function that similar to numpy.argmin() in python
+
+## GeneticAlgoUtil.java
++ provides a java implemention for Genetic Algorithm, select/crossover/mutate
