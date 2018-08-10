@@ -12,7 +12,6 @@ public class GeneticAlgoUtil {
     public static int[] select(double[] fitness, int pickupNum) {
         // 1. [1,2,3,4] => SUM = 10
         double sum = Arrays.stream(fitness).sum();
-
         // 2. [1,2,3,4] => [0.1, 0.2, 0.3, 0.4]
         double[] poss = new double[fitness.length];
         for(int i=0; i<fitness.length; i++) {
@@ -60,8 +59,8 @@ public class GeneticAlgoUtil {
      * @param parent2
      */
     public static int[][][] crossover(int[][] parent1, int[][] parent2) {
-        int[][] p1 = DeepCloneAndConcatArrayUtil.clone(parent1);
-        int[][] p2 = DeepCloneAndConcatArrayUtil.clone(parent2);
+        int[][] p1 = DeepCloneAndConcatArrayUtil.deepClone(parent1);
+        int[][] p2 = DeepCloneAndConcatArrayUtil.deepClone(parent2);
 
         int rows = p1.length;
         int cols = p1[0].length;
