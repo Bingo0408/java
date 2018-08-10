@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class DeepCloneAndConcatArrayUtil {
 
-    /*
-     * 2-d array deep clone
-     * For 1-d array, just use .clone()
+    /**
+     * 2d array deep clone
+     * For 1d array, just use .clone()
      */
     public static int[][] deepClone(int[][] oldArray) {
         int d1 = oldArray.length;
@@ -17,9 +17,9 @@ public class DeepCloneAndConcatArrayUtil {
         return newArray;
     }
 
-    /*
-     * 2-d array deep clone
-     * For 1-d array, just use .clone()
+    /**
+     * 2d array deep clone
+     * For 1d array, just use .clone()
      */
     public static double[][] deepClone(double[][] oldArray) {
         int d1 = oldArray.length;
@@ -30,9 +30,9 @@ public class DeepCloneAndConcatArrayUtil {
         return newArray;
     }
 
-    /*
-     * 3-d array deep clone
-     * For 1-d array, just use .clone()
+    /**
+     * 3d array deep clone
+     * For 1d array, just use .clone()
      */
     public static int[][][] deepClone(int[][][] oldArray) {
         int d1 = oldArray.length;
@@ -46,9 +46,9 @@ public class DeepCloneAndConcatArrayUtil {
         return newArray;
     }
 
-    /*
-     * 3-d array deep clone
-     * For 1-d array, just use .clone()
+    /**
+     * 3d array deep clone
+     * For 1d array, just use .clone()
      */
     public static double[][][] deepClone(double[][][] oldArray) {
         int d1 = oldArray.length;
@@ -62,8 +62,8 @@ public class DeepCloneAndConcatArrayUtil {
         return newArray;
     }
 
-    /*
-     * deep concat two 3-d array
+    /**
+     * deep concat two 3d array
      */
     public static int[][][] deepConcat(int[][][] a1, int[][][] a2) {
         assert(a1[0].length == a2[0].length);

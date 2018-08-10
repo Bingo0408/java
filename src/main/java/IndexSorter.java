@@ -5,9 +5,7 @@ import java.util.List;
 public class IndexSorter<T extends Comparable<T>> implements Comparator<Integer> {
 
     private final T[] values;
-
     private final Integer[] indexes;
-
     /**
      * Constructs a new IndexSorter based upon the parameter array.
      * @param d
