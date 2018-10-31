@@ -16,7 +16,7 @@ public class RandomUtil {
     public static int[] randomSelect(double[] possArr, int pickupNum, boolean duplicatePick) {
 
         // 1. normalize ratio
-        double[] poss = RandomUtil.normalizeRatio(possArr);
+        double[] poss = normalizeRatio(possArr);
 
         // 2. [0.1, 0.2, 0.3, 0.4] => [0.1, 0.3, 0.6, 1.0]
         double[] cumulativePoss = new double[possArr.length];
@@ -54,7 +54,6 @@ public class RandomUtil {
                     i++; // go to next round
                 }
             }
-
         }
         return indexes;
     }
