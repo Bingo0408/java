@@ -13,7 +13,7 @@ public class RandomUtilTest {
 
     @Test
     public void testRandomSelect() {
-        int[] score = new int[]{1,1,1,20};
+        double[] score = new double[]{1,1,1,20};
         int[] randomPick = RandomUtil.randomSelect(score, 3, true);
         System.out.println(Arrays.toString(randomPick));
         randomPick = RandomUtil.randomSelect(score, 3, false);
