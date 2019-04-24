@@ -18,3 +18,9 @@
 
 ## RandomUtil.java
 + provides a java implementation for random utils
+
+## DateTimeUtil.java
++ a Java date manipulation util by using LocalDate
+
+## RebalanceCalculator.java
++ Given data and target, auto balance result
